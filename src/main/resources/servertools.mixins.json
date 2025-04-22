@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.kofeychi.ServerTools.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ServerTickEventMixin"
+  ],
+  "client": [
+    "ClientTickEventMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
