@@ -21,7 +21,7 @@
     "main": [
       "dev.kofeychi.ServerTools.ServerToolsMain"
     ],
-    "preLaucnh": [
+    "preLaunch": [
       "dev.kofeychi.ServerTools.Console"
     ]
   },

@@ -1,9 +1,11 @@
 package dev.kofeychi.ServerTools;
 
+import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
+
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-public class Console {
+public class Console implements PreLaunchEntrypoint {
     public static StringBuilder consoleData = new StringBuilder();
 
     private static final OutputStream proxyStream = new OutputStream() {
@@ -16,7 +18,7 @@ public class Console {
         }
     };
 
-    public static void main() {
+    public void onPreLaunch() {
         System.setOut(new PrintStream(proxyStream, true));
         System.setErr(new PrintStream(proxyStream, true));
     }
