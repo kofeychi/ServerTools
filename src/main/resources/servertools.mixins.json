@@ -9,7 +9,8 @@
   "client": [
     "ClientTickEventMixin",
     "DebugRendererMixin",
-    "MainMenuMixin"
+    "MainMenuMixin",
+    "PauseScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

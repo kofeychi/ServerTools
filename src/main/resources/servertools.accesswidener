@@ -1,2 +1,4 @@
 accessWidener v2 named
 accessible method net/minecraft/client/gui/screen/Screen addDrawableChild (Lnet/minecraft/client/gui/Element;)Lnet/minecraft/client/gui/Element;
+accessible field net/minecraft/client/gui/DrawContext guiAtlasManager Lnet/minecraft/client/texture/GuiAtlasManager;
+accessible field net/minecraft/client/texture/SpriteContents image Lnet/minecraft/client/texture/NativeImage;

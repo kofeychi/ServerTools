@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.registry.Registries;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.Identifier;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 import org.mozilla.javascript.ScriptableObject;
@@ -25,9 +26,13 @@ import java.util.stream.Stream;
 
 public class ServerToolsMain implements ModInitializer {
     public static final Gson GSON = new GsonBuilder().setLenient().create();
-    private static final Logger LOGGER = LoggerFactory.getLogger(ServerToolsMain.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(ServerToolsMain.class);
     public static PrettyLogger PrettyLogger = new PrettyLogger("ServerTools");
     public static MinecraftServer Server;
+
+    public static Identifier of(String path){
+        return Identifier.of("servertools", path);
+    }
 
     @Override
     public void onInitialize() {

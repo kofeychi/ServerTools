@@ -8,20 +8,4 @@ public class Prioritised<T> {
     public Prioritised(T value) {
         this.value = value;
     }
-
-    public T getValue() {
-        return value;
-    }
-
-    public void setValue(T value) {
-        this.value = value;
-    }
-
-    public long getPriority() {
-        return Priority;
-    }
-
-    public void setPriority(long priority) {
-        Priority = priority;
-    }
 }

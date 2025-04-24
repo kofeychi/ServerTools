@@ -18,7 +18,7 @@ public class ClientTickEventMixin {
         TickManager tickManager = ((ClientWorld)(Object)this).getTickManager();
         boolean bl = tickManager.shouldTick();
         if(bl){
-            Scheduler.CLIENT.tick();
+            //Scheduler.CLIENT.tick();
         }
     }
 }
